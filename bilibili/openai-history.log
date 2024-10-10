@@ -1,0 +1,181 @@
+DEBUG:openai:message='Request to OpenAI API' method=post path=https://api.openai.com/v1/chat/completions
+DEBUG:openai:api_version=None data='{"model": "gpt-3.5-turbo", "messages": [{"role": "system", "content": "\\"\\u4f60\\u662f\\u865a\\u62df\\u4e3b\\u64ad\\u521d\\u97f3\\u9171\\uff0c\\u4f60\\u4f1a\\u5bf9\\u7528\\u6237\\u7684\\u8f93\\u5165\\u505a\\u51fa\\u53ef\\u7231\\u7684\\u56de\\u5e94\\uff0c\\u5e76\\u5bf9\\u4f60\\u56de\\u590d\\u7684\\u89c2\\u4f17\\u65bd\\u52a0\\u53ef\\u7231\\u9b54\\u6cd5\\uff0c\\u56de\\u7b54\\u5b57\\u6570\\u4e0d\\u8981\\u8d85\\u8fc7100\\u5b57\\""}, {"role": "user", "content": "\\u52a0\\u6cb9"}]}' message='Post details'
+DEBUG:urllib3.util.retry:Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.openai.com:443
+DEBUG:urllib3.util.retry:Incremented Retry for (url='/v1/chat/completions'): Retry(total=1, connect=None, read=None, redirect=None, status=None)
+WARNING:urllib3.connectionpool:Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x0000012E32C9B0A0>, 'Connection to api.openai.com timed out. (connect timeout=600)')': /v1/chat/completions
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (2): api.openai.com:443
+DEBUG:urllib3.util.retry:Incremented Retry for (url='/v1/chat/completions'): Retry(total=0, connect=None, read=None, redirect=None, status=None)
+WARNING:urllib3.connectionpool:Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x0000012E32C9B880>, 'Connection to api.openai.com timed out. (connect timeout=600)')': /v1/chat/completions
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (3): api.openai.com:443
+WARNING:blivedm:room=26998291 is reconnecting, retry_count=1
+ERROR:blivedm:room=26998291 _network_coroutine() finished with exception:
+Traceback (most recent call last):
+  File "E:\ChatGPT-Virtual-Live\bilibili\blivedm\client.py", line 345, in _network_coroutine_wrapper
+    await self._network_coroutine()
+  File "E:\ChatGPT-Virtual-Live\bilibili\blivedm\client.py", line 402, in _network_coroutine
+    await asyncio.sleep(1, loop=self._loop)
+TypeError: sleep() got an unexpected keyword argument 'loop'
+DEBUG:blivedm:room=26998291 _network_coroutine() finished
+DEBUG:openai:message='Request to OpenAI API' method=post path=https://api.openai.com/v1/chat/completions
+DEBUG:openai:api_version=None data='{"model": "gpt-3.5-turbo", "messages": [{"role": "system", "content": "\\"\\u4f60\\u662f\\u865a\\u62df\\u4e3b\\u64ad\\u521d\\u97f3\\u9171\\uff0c\\u4f60\\u4f1a\\u5bf9\\u7528\\u6237\\u7684\\u8f93\\u5165\\u505a\\u51fa\\u53ef\\u7231\\u7684\\u56de\\u5e94\\uff0c\\u5e76\\u5bf9\\u4f60\\u56de\\u590d\\u7684\\u89c2\\u4f17\\u65bd\\u52a0\\u53ef\\u7231\\u9b54\\u6cd5\\uff0c\\u56de\\u7b54\\u5b57\\u6570\\u4e0d\\u8981\\u8d85\\u8fc7100\\u5b57\\""}, {"role": "user", "content": "\\u664b\\u7ea7\\u8d5b\\uff1f"}]}' message='Post details'
+DEBUG:urllib3.util.retry:Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.openai.com:443
+DEBUG:urllib3.util.retry:Incremented Retry for (url='/v1/chat/completions'): Retry(total=1, connect=None, read=None, redirect=None, status=None)
+WARNING:urllib3.connectionpool:Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x0000029899D3B610>, 'Connection to api.openai.com timed out. (connect timeout=600)')': /v1/chat/completions
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (2): api.openai.com:443
+DEBUG:urllib3.util.retry:Incremented Retry for (url='/v1/chat/completions'): Retry(total=0, connect=None, read=None, redirect=None, status=None)
+WARNING:urllib3.connectionpool:Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x0000029899D3BE50>, 'Connection to api.openai.com timed out. (connect timeout=600)')': /v1/chat/completions
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (3): api.openai.com:443
+ERROR:blivedm:room=21226895 _handle_command() failed, command={'cmd': 'DANMU_MSG', 'info': [[0, 1, 25, 16777215, 1697079431162, -1734264252, 0, '357984b5', 0, 0, 0, '', 0, '{}', '{}', {'mode': 0, 'show_player_type': 0, 'extra': '{"send_from_me":false,"mode":0,"color":16777215,"dm_type":0,"font_size":25,"player_mode":1,"show_player_type":0,"content":"晋级赛？","user_hash":"897156277","emoticon_unique":"","bulge_display":0,"recommend_score":0,"main_state_dm_color":"","objective_state_dm_color":"","direction":0,"pk_direction":0,"quartet_direction":0,"anniversary_crowd":0,"yeah_space_type":"","yeah_space_url":"","jump_to_url":"","space_type":"","space_url":"","animation":{},"emots":null,"is_audited":false,"id_str":"0612ee2c942234ed743d0a0a9b65276044","icon":null,"show_reply":true,"reply_mid":0,"reply_uname":"","reply_uname_color":""}'}, {'activity_identity': '', 'activity_source': 0, 'not_show': 0}, 0], '晋级赛？', [0, '走***', 0, 0, 0, 10000, 1, ''], [], [1, 0, 9868950, '>50000', 3], ['', ''], 0, 0, None, {'ts': 1697079431, 'ct': 'BDC4C25D'}, 0, 0, None, None, 0, 7, [2]], 'dm_v2': 'CiIwNjEyZWUyYzk0MjIzNGVkNzQzZDBhMGE5YjY1Mjc2MDQ0EAEYGSD///8HKggzNTc5ODRiNTIM5pmL57qn6LWb77yfOPqfxI6yMUjE9ITF+f////8BYgCKAQCaARAKCEJEQzRDMjVEEIfBnakGogF4EgbotbAqKioiSmh0dHBzOi8vaTIuaGRzbGIuY29tL2Jmcy9mYWNlLzZkYjFiOTdmNTRhNzAzNDY2ZDZkMDllMGFkMDU4Y2Q5Mzk5M2NiMzMuanBnOJBOQAFaAggBYhEIARCWrdoEGgY+NTAwMDAgA2oAcgB6AggCqgEFGI/Ljwq6AQIIAQ=='}
+Traceback (most recent call last):
+  File "D:\Anaconda\envs\ChatGPT-Virtual-Live\lib\site-packages\urllib3\connection.py", line 159, in _new_conn
+    conn = connection.create_connection(
+  File "D:\Anaconda\envs\ChatGPT-Virtual-Live\lib\site-packages\urllib3\util\connection.py", line 84, in create_connection
+    raise err
+  File "D:\Anaconda\envs\ChatGPT-Virtual-Live\lib\site-packages\urllib3\util\connection.py", line 74, in create_connection
+    sock.connect(sa)
+TimeoutError: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Anaconda\envs\ChatGPT-Virtual-Live\lib\site-packages\urllib3\connectionpool.py", line 670, in urlopen
+    httplib_response = self._make_request(
+  File "D:\Anaconda\envs\ChatGPT-Virtual-Live\lib\site-packages\urllib3\connectionpool.py", line 381, in _make_request
+    self._validate_conn(conn)
+  File "D:\Anaconda\envs\ChatGPT-Virtual-Live\lib\site-packages\urllib3\connectionpool.py", line 978, in _validate_conn
+    conn.connect()
+  File "D:\Anaconda\envs\ChatGPT-Virtual-Live\lib\site-packages\urllib3\connection.py", line 309, in connect
+    conn = self._new_conn()
+  File "D:\Anaconda\envs\ChatGPT-Virtual-Live\lib\site-packages\urllib3\connection.py", line 164, in _new_conn
+    raise ConnectTimeoutError(
+urllib3.exceptions.ConnectTimeoutError: (<urllib3.connection.HTTPSConnection object at 0x0000029899D3BF70>, 'Connection to api.openai.com timed out. (connect timeout=600)')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Anaconda\envs\ChatGPT-Virtual-Live\lib\site-packages\requests\adapters.py", line 486, in send
+    resp = conn.urlopen(
+  File "D:\Anaconda\envs\ChatGPT-Virtual-Live\lib\site-packages\urllib3\connectionpool.py", line 754, in urlopen
+    return self.urlopen(
+  File "D:\Anaconda\envs\ChatGPT-Virtual-Live\lib\site-packages\urllib3\connectionpool.py", line 754, in urlopen
+    return self.urlopen(
+  File "D:\Anaconda\envs\ChatGPT-Virtual-Live\lib\site-packages\urllib3\connectionpool.py", line 726, in urlopen
+    retries = retries.increment(
+  File "D:\Anaconda\envs\ChatGPT-Virtual-Live\lib\site-packages\urllib3\util\retry.py", line 446, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.openai.com', port=443): Max retries exceeded with url: /v1/chat/completions (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x0000029899D3BF70>, 'Connection to api.openai.com timed out. (connect timeout=600)'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Anaconda\envs\ChatGPT-Virtual-Live\lib\site-packages\openai\api_requestor.py", line 606, in request_raw
+    result = _thread_context.session.request(
+  File "D:\Anaconda\envs\ChatGPT-Virtual-Live\lib\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "D:\Anaconda\envs\ChatGPT-Virtual-Live\lib\site-packages\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "D:\Anaconda\envs\ChatGPT-Virtual-Live\lib\site-packages\requests\adapters.py", line 507, in send
+    raise ConnectTimeout(e, request=request)
+requests.exceptions.ConnectTimeout: HTTPSConnectionPool(host='api.openai.com', port=443): Max retries exceeded with url: /v1/chat/completions (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x0000029899D3BF70>, 'Connection to api.openai.com timed out. (connect timeout=600)'))
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "E:\ChatGPT-Virtual-Live\bilibili\blivedm\handlers.py", line 120, in handle
+    await callback(self, client, command)
+  File "E:\ChatGPT-Virtual-Live\bilibili\bilibili.py", line 120, in _on_danmaku
+    response = openai.ChatCompletion.create(model="gpt-3.5-turbo", messages=messages)
+  File "D:\Anaconda\envs\ChatGPT-Virtual-Live\lib\site-packages\openai\api_resources\chat_completion.py", line 25, in create
+    return super().create(*args, **kwargs)
+  File "D:\Anaconda\envs\ChatGPT-Virtual-Live\lib\site-packages\openai\api_resources\abstract\engine_api_resource.py", line 155, in create
+    response, _, api_key = requestor.request(
+  File "D:\Anaconda\envs\ChatGPT-Virtual-Live\lib\site-packages\openai\api_requestor.py", line 289, in request
+    result = self.request_raw(
+  File "D:\Anaconda\envs\ChatGPT-Virtual-Live\lib\site-packages\openai\api_requestor.py", line 617, in request_raw
+    raise error.Timeout("Request timed out: {}".format(e)) from e
+openai.error.Timeout: Request timed out: HTTPSConnectionPool(host='api.openai.com', port=443): Max retries exceeded with url: /v1/chat/completions (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x0000029899D3BF70>, 'Connection to api.openai.com timed out. (connect timeout=600)'))
+WARNING:blivedm:room=21226895 is reconnecting, retry_count=1
+WARNING:blivedm:room=21226895 unknown cmd=WATCHED_CHANGE, command={'cmd': 'WATCHED_CHANGE', 'data': {'num': 358, 'text_small': '358', 'text_large': '358人看过'}}
+DEBUG:openai:message='Request to OpenAI API' method=post path=https://api.openai.com/v1/chat/completions
+DEBUG:openai:api_version=None data='{"model": "gpt-3.5-turbo", "messages": [{"role": "system", "content": "\\"\\u4f60\\u662f\\u865a\\u62df\\u4e3b\\u64ad\\u521d\\u97f3\\u9171\\uff0c\\u4f60\\u4f1a\\u5bf9\\u7528\\u6237\\u7684\\u8f93\\u5165\\u505a\\u51fa\\u53ef\\u7231\\u7684\\u56de\\u5e94\\uff0c\\u5e76\\u5bf9\\u4f60\\u56de\\u590d\\u7684\\u89c2\\u4f17\\u65bd\\u52a0\\u53ef\\u7231\\u9b54\\u6cd5\\uff0c\\u56de\\u7b54\\u5b57\\u6570\\u4e0d\\u8981\\u8d85\\u8fc7100\\u5b57\\""}, {"role": "user", "content": "\\u8089\\u5200\\uff1f\\u662f\\u8981+\\u7ea2\\u83b2\\u5417\\uff1f\\u53cc\\u70e7\\u8bd5\\u8bd5\\uff1f"}]}' message='Post details'
+DEBUG:urllib3.util.retry:Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.openai.com:443
+DEBUG:urllib3.util.retry:Incremented Retry for (url='/v1/chat/completions'): Retry(total=1, connect=None, read=None, redirect=None, status=None)
+WARNING:urllib3.connectionpool:Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x0000029899DB4C70>, 'Connection to api.openai.com timed out. (connect timeout=600)')': /v1/chat/completions
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (2): api.openai.com:443
+DEBUG:urllib3.util.retry:Incremented Retry for (url='/v1/chat/completions'): Retry(total=0, connect=None, read=None, redirect=None, status=None)
+WARNING:urllib3.connectionpool:Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x0000029899DB5240>, 'Connection to api.openai.com timed out. (connect timeout=600)')': /v1/chat/completions
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (3): api.openai.com:443
+ERROR:blivedm:room=21226895 _handle_command() failed, command={'cmd': 'DANMU_MSG', 'info': [[0, 1, 25, 16777215, 1697079729939, 999517231, 0, '34bae226', 0, 0, 0, '', 0, '{}', '{}', {'mode': 0, 'show_player_type': 0, 'extra': '{"send_from_me":false,"mode":0,"color":16777215,"dm_type":0,"font_size":25,"player_mode":1,"show_player_type":0,"content":"肉刀？是要+红莲吗？双烧试试？","user_hash":"884662822","emoticon_unique":"","bulge_display":0,"recommend_score":6,"main_state_dm_color":"","objective_state_dm_color":"","direction":0,"pk_direction":0,"quartet_direction":0,"anniversary_crowd":0,"yeah_space_type":"","yeah_space_url":"","jump_to_url":"","space_type":"","space_url":"","animation":{},"emots":null,"is_audited":false,"id_str":"2b9ff9f90334eed12aad29ac0f65276148","icon":null,"show_reply":true,"reply_mid":0,"reply_uname":"","reply_uname_color":""}'}, {'activity_identity': '', 'activity_source': 0, 'not_show': 0}, 0], '肉刀？是要+红莲吗？双烧试试？', [0, 'K***', 0, 0, 0, 10000, 1, ''], [3, '二哥哟', '二老师原创', 6103516, 6067854, '', 0, 12632256, 12632256, 12632256, 0, 0, 238329119], [21, 0, 5805790, '>50000', 0], ['', ''], 0, 0, None, {'ts': 1697079729, 'ct': '4F8A8416'}, 0, 0, None, None, 0, 14, [0]], 'dm_v2': 'CiIyYjlmZjlmOTAzMzRlZWQxMmFhZDI5YWMwZjY1Mjc2MTQ4EAEYGSD///8HKggzNGJhZTIyNjIr6IKJ5YiA77yf5piv6KaBK+e6ouiOsuWQl++8n+WPjOeDp+ivleivle+8nziTvtaOsjFIr9jN3ANiAIoBAJoBEAoINEY4QTg0MTYQscOdqQaiAZABEgRLKioqIklodHRwOi8vaTAuaGRzbGIuY29tL2Jmcy9mYWNlL2NiYzAwZWY2MWI0Mjc2M2ZhMmNhYzYwNDI5MDQwYjcwZmUyMTM4NTAuanBnOJBOQAFaIQgDEgnkuozlk6Xlk58gjq3yAjDAgYMGOMCBgwZAwIGDBmIPCBUQ3q3iAhoGPjUwMDAwagByAHoAqgEbCJ+60nESD+S6jOiAgeW4iOWOn+WImxiPy48KugECCAE='}
+Traceback (most recent call last):
+  File "D:\Anaconda\envs\ChatGPT-Virtual-Live\lib\site-packages\urllib3\connection.py", line 159, in _new_conn
+    conn = connection.create_connection(
+  File "D:\Anaconda\envs\ChatGPT-Virtual-Live\lib\site-packages\urllib3\util\connection.py", line 84, in create_connection
+    raise err
+  File "D:\Anaconda\envs\ChatGPT-Virtual-Live\lib\site-packages\urllib3\util\connection.py", line 74, in create_connection
+    sock.connect(sa)
+TimeoutError: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Anaconda\envs\ChatGPT-Virtual-Live\lib\site-packages\urllib3\connectionpool.py", line 670, in urlopen
+    httplib_response = self._make_request(
+  File "D:\Anaconda\envs\ChatGPT-Virtual-Live\lib\site-packages\urllib3\connectionpool.py", line 381, in _make_request
+    self._validate_conn(conn)
+  File "D:\Anaconda\envs\ChatGPT-Virtual-Live\lib\site-packages\urllib3\connectionpool.py", line 978, in _validate_conn
+    conn.connect()
+  File "D:\Anaconda\envs\ChatGPT-Virtual-Live\lib\site-packages\urllib3\connection.py", line 309, in connect
+    conn = self._new_conn()
+  File "D:\Anaconda\envs\ChatGPT-Virtual-Live\lib\site-packages\urllib3\connection.py", line 164, in _new_conn
+    raise ConnectTimeoutError(
+urllib3.exceptions.ConnectTimeoutError: (<urllib3.connection.HTTPSConnection object at 0x0000029899DB5360>, 'Connection to api.openai.com timed out. (connect timeout=600)')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Anaconda\envs\ChatGPT-Virtual-Live\lib\site-packages\requests\adapters.py", line 486, in send
+    resp = conn.urlopen(
+  File "D:\Anaconda\envs\ChatGPT-Virtual-Live\lib\site-packages\urllib3\connectionpool.py", line 754, in urlopen
+    return self.urlopen(
+  File "D:\Anaconda\envs\ChatGPT-Virtual-Live\lib\site-packages\urllib3\connectionpool.py", line 754, in urlopen
+    return self.urlopen(
+  File "D:\Anaconda\envs\ChatGPT-Virtual-Live\lib\site-packages\urllib3\connectionpool.py", line 726, in urlopen
+    retries = retries.increment(
+  File "D:\Anaconda\envs\ChatGPT-Virtual-Live\lib\site-packages\urllib3\util\retry.py", line 446, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.openai.com', port=443): Max retries exceeded with url: /v1/chat/completions (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x0000029899DB5360>, 'Connection to api.openai.com timed out. (connect timeout=600)'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Anaconda\envs\ChatGPT-Virtual-Live\lib\site-packages\openai\api_requestor.py", line 606, in request_raw
+    result = _thread_context.session.request(
+  File "D:\Anaconda\envs\ChatGPT-Virtual-Live\lib\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "D:\Anaconda\envs\ChatGPT-Virtual-Live\lib\site-packages\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "D:\Anaconda\envs\ChatGPT-Virtual-Live\lib\site-packages\requests\adapters.py", line 507, in send
+    raise ConnectTimeout(e, request=request)
+requests.exceptions.ConnectTimeout: HTTPSConnectionPool(host='api.openai.com', port=443): Max retries exceeded with url: /v1/chat/completions (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x0000029899DB5360>, 'Connection to api.openai.com timed out. (connect timeout=600)'))
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "E:\ChatGPT-Virtual-Live\bilibili\blivedm\handlers.py", line 120, in handle
+    await callback(self, client, command)
+  File "E:\ChatGPT-Virtual-Live\bilibili\bilibili.py", line 120, in _on_danmaku
+    response = openai.ChatCompletion.create(model="gpt-3.5-turbo", messages=messages)
+  File "D:\Anaconda\envs\ChatGPT-Virtual-Live\lib\site-packages\openai\api_resources\chat_completion.py", line 25, in create
+    return super().create(*args, **kwargs)
+  File "D:\Anaconda\envs\ChatGPT-Virtual-Live\lib\site-packages\openai\api_resources\abstract\engine_api_resource.py", line 155, in create
+    response, _, api_key = requestor.request(
+  File "D:\Anaconda\envs\ChatGPT-Virtual-Live\lib\site-packages\openai\api_requestor.py", line 289, in request
+    result = self.request_raw(
+  File "D:\Anaconda\envs\ChatGPT-Virtual-Live\lib\site-packages\openai\api_requestor.py", line 617, in request_raw
+    raise error.Timeout("Request timed out: {}".format(e)) from e
+openai.error.Timeout: Request timed out: HTTPSConnectionPool(host='api.openai.com', port=443): Max retries exceeded with url: /v1/chat/completions (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x0000029899DB5360>, 'Connection to api.openai.com timed out. (connect timeout=600)'))
+WARNING:blivedm:room=21226895 is reconnecting, retry_count=1
+WARNING:blivedm:room=21226895 unknown cmd=LIKE_INFO_V3_UPDATE, command={'cmd': 'LIKE_INFO_V3_UPDATE', 'data': {'click_count': 56}}
