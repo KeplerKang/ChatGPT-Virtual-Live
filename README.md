@@ -51,7 +51,7 @@ https://github.com/HaoDong108/DouyinBarrageGrab
 1.  下载代码并安装依赖：
     
     ```
-    git clone https://github.com/smallnew666/ChatGPT-Virtual-Live.git 
+    git clone https://github.com/KeplerKang/ChatGPT-Virtual-Live.git 
     cd ChatGPT-Virtual-Live 
     pip install -r requirements.txt
     ```
